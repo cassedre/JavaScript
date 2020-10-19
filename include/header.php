@@ -37,7 +37,7 @@
             <div class="navbar-nav">
             <a href="nav-item nav-link" id="home-menu"> Home </a>
             <a href="nav-item nav-link" id="array-menu"> Array </a>
-            <a href="nav-item nav-link" id="-menu"> Home </a>
+            <a href="nav-item nav-link" id="-menu"> curso </a>
             
 
             </div>
