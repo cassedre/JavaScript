@@ -24,26 +24,29 @@
 </head>
 
 <body>
-    <?php include("include/header.php"); ?>
-    <!-- header include -->
-
-
-    <h1>form</h1>
-
+    <?php include("include/header.php"); ?> <!-- header include -->
+    
 
     <div class="row">
-    <div class="col-12">
-    <form action="array.php" method="get">
-             Country: <input type="text" name="pais">
-             <input type="submit" name="enviar">
+        <div class="col-12">
+            <h2> Form </h2>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <div class="col-12">
+            <form action="array.php" method="get">
+                Country: <input type="text" name="pais">
+                <input type="submit" name="enviar">
             </form>
         </div>
     </div>
 
 
     </br>
-    <?php include("include/footer.php"); ?>
-    <!-- footer include -->
+    <?php include("include/footer.php"); ?>  <!-- footer include -->
+   
 </body>
 
 </html>
