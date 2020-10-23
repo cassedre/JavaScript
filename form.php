@@ -38,8 +38,8 @@
              <input type="submit" name="enviar">
             </form>
         </div>
-
     </div>
+
 
     </br>
     <?php include("include/footer.php"); ?>
