@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Document</title>
     <!-- FONTE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
@@ -24,42 +24,26 @@
 </head>
 
 <body>
-    <?php include('include/header.php'); ?>
+    <?php include("include/header.php"); ?>
+    <!-- header include -->
 
-    <br></br>
-    <div id="banner">
-        <h1>&lt;HDemetrio/&gt; </h1>
+
+    <h1>form</h1>
+
+
+    <div class="row">
+    <div class="col-12">
+    <form action="array.php" method="get">
+             Country: <input type="text" name="pais">
+             <input type="submit" name="enviar">
+            </form>
+        </div>
 
     </div>
 
-    <main>
-        <a href="#">
-            <h2 class="section-heading">My Personal Information</h2>
-        </a>
-
-        <section class="my-personal">
-            <div class="card card-gif">
-                <div class="card-image">
-                    <a href="#">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pandasecurity.com%2Fmediacenter%2Fsrc%2Fuploads%2F2016%2F05%2FPandaGeekPride_ENG_800x800gif.gif&f=1&nofb=1" alt="Card Image">
-                    </a>
-                </div>
-                <div class="card-description">
-
-                    <p><strong>Name: Henrique Demetrio Pacheco de Souza </p></strong>
-                    <p><strong>My Student Number: 2019225 </p></strong>
-                    <p><strong>Course: Technology Information </p></strong>
-                    <p><strong>CA: Web Development</p></strong>
-                    
-                    <a href="#" class="btn-readmore"> Read More</a>
-                </div>
-            </div>
-            
-        </section>
-    </main>
-
-
+    </br>
     <?php include("include/footer.php"); ?>
+    <!-- footer include -->
 </body>
 
 </html>

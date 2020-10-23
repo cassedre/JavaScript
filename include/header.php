@@ -1,51 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <!-- FONTE -->
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+      <header>
 
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
+          <nav class=" navbar navbar-expand-md  sticky-top ">
+              <!-- nav bar which is fixed to the top when the page is scrolled-->
+              <div class="container-fluid">
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                      <span class="navbar-toggler-icon"></span>
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/3d2750cf9d.js" crossorigin="anonymous"></script>
-<script src="js/progressbar.min.js"> </script>
-</head>
-<body>
-    <header> 
-    <div class="container" id="nav-container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="#" class="navbar-brand">
-                <img id="logo" src="images/download.png" height="100" width="100" alt="My Student Information">
+                  </button>
+                  <div class="collapse- navbar-collapse" id="navbarResponsive" id="mySkillsAlert" onclick="getMySkillsAlert()">
+                      <!-- here is being used a div containing some events as onclick , id's and a function which is used in javascrip. Once the user click in any link in the nav bar it gonna shows up an alert message to the screen -->
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="index.php"> HOME</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link myScrip" href="array.php"> ARRAY </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="form.php"> FORM </a>
+                          </li>
+                      </ul>
 
-            </a>
-            <button class="navbar.toggler" type="button" data-toggle="collapse" 
-            data-target="navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation"></button>
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end "id="navbar-links">
-            <div class="navbar-nav">
-            <a href="nav-item nav-link" id="home-menu"> Home </a>
-            <a href="nav-item nav-link" id="array-menu"> Array </a>
-            <a href="nav-item nav-link" id="-menu"> curso </a>
-            
-
-            </div>
-            </div>
-        </nav>
-    
-    
-    </div>
-     </header>
-</body>
-</html>
+                  </div>
+              </div>
+          </nav>
+      </header>
