@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu projeto</title>
+    <title>My First Project using PHP</title>
     <!-- FONTE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
@@ -31,18 +31,16 @@
     <?php include('include/header.php'); ?>
     <!-- header include -->
     <div class="row title-array">
-
         <div class="col-12">
             <h1>ARRAY</h1>
         </div>
-
     </div>
     <div class="row">
         <div class="col-12">
             <div class="tabela table-striped">
 
-          
-        
+
+
                 <table class="table table-hover">
 
                     <tr>
@@ -51,26 +49,24 @@
                     </tr>
 
                     <?php
-                    
-                    
-                    $pesquisado = filter_input(INPUT_GET, 'pais');
+
+
+                    $searched = filter_input(INPUT_GET, 'country');
 
                     $countries = array("Italy" => "Rome", "Luxembourg" => "Luxembourg", "Belgium" => "Brussels", "Denmark" => "Copenhagen", "Finland" => "Helsinki", "France" => "Paris", "Slovakia" => "Bratislava", "Slovenia" => "Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland" => "Dublin", "Netherlands" => "Amsterdam", "Portugal" => "Lisbon", "Spain" => "Madrid", "Sweden" => "Stockholm", "United Kingdom" => "London", "Cyprus" => "Nicosia", "Lithuania" => "Vilnius", "Czech Republic" => "Prague", "Estonia" => "Tallin", "Hungary" => "Budapest", "Latvia" => "Riga", "Malta" => "Valetta", "Austria" => "Vienna", "Poland" => "Warsaw");
-                    
-                    echo isset($countries[$pesquisado])? $countries[$pesquisado] : 'Sorry, but this country is not listed';
-                  
-                  
+
+                    echo isset($countries[$searched]) ? $countries[$searched] : 'Sorry, but this country is not listed';
+
+
                     foreach ($countries as $x => $x_value) {
 
                         echo "<tr><td> " . $x . "</td><td>" . $x_value . "</td></tr>";
-
-                        
                     }
                     ?>
-                    
-                    </table>
 
-                    
+                </table>
+
+
             </div>
         </div>
     </div>
